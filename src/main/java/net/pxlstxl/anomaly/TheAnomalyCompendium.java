@@ -2,6 +2,8 @@ package net.pxlstxl.anomaly;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.pxlstxl.anomaly.item.ModItemGroups;
+import net.pxlstxl.anomaly.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,9 @@ public class TheAnomalyCompendium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+
 	}
 }
