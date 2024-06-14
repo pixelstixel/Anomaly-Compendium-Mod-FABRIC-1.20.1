@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "anomaly_compendium",
+	"version": "${version}",
+	"name": "The Anomaly Compendium",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"pixelstixel"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/anomaly_compendium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pxlstxl.anomaly.TheAnomalyCompendium"
+		],
+		"client": [
+			"net.pxlstxl.anomaly.TheAnomalyCompendiumClient"
+		],
+		"fabric-datagen": [
+			"net.pxlstxl.anomaly.TheAnomalyCompendiumDataGenerator"
+		]
+	},
+	"mixins": [
+		"anomaly_compendium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
